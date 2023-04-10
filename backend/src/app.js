@@ -13,6 +13,8 @@ app.use(express.json());
 
 /*************** routes ***************/
 
-
+app.get('/', (req, res) => {
+    res.send('Bienvenido a mi API REST FULL');
+});
 
 module.exports = app;
