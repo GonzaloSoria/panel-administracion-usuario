@@ -17,4 +17,10 @@ app.get('/', (req, res) => {
     res.send('Bienvenido a mi API REST FULL');
 });
 
+/*************** route API user ***************/
+
+app.use('/api/users', require('./routes/user'))
+
+
+
 module.exports = app;

@@ -3,8 +3,7 @@ const user_ctrl = {};
 
 user_ctrl.getUsers = async (req, res) => {
     const users = await User.find();
-    const users_data = await users.json();
-    return users_data;
+    res.json(users);
 };
 
 user_ctrl.createUser = async (req, res) => {
@@ -21,8 +20,7 @@ user_ctrl.createUser = async (req, res) => {
 
 user_ctrl.getUser = async (req, res) => {
     const user = await User.findById(req.params.id);
-    const user_found = await user.json();
-    return user_found;
+    res.json(user);
 };
 
 user_ctrl.deleteUser = async (req, res) => {
