@@ -7,7 +7,11 @@ export default {
   theme: {
     extend: {},
     colors: {
-      'primary-color': '#6246ea',
+      'header-color': '#ffffff',
+    },
+    backgroundColor: {
+      'header': '#67568c',
+      'form': '#ff6e6c',
     }
   },
   plugins: [],
